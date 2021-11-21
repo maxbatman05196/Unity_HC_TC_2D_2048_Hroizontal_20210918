@@ -6967,6 +6967,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1836062193}
+  - component: {fileID: 1836062194}
   m_Layer: 0
   m_Name: "2048\u7CFB\u7D71"
   m_TagString: Untagged
@@ -6988,6 +6989,35 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1836062194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1836062192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b99ba46884c552e49b1309f1fdd6c5d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blocksEmpty:
+  - {fileID: 6015548195394788107}
+  - {fileID: 551294055}
+  - {fileID: 1323444072}
+  - {fileID: 916918018}
+  - {fileID: 3765189}
+  - {fileID: 770938152}
+  - {fileID: 1154647280}
+  - {fileID: 1831130141}
+  - {fileID: 438560383}
+  - {fileID: 165283005}
+  - {fileID: 1774495889}
+  - {fileID: 2062182659}
+  - {fileID: 1460381272}
+  - {fileID: 947646340}
+  - {fileID: 1667862592}
+  - {fileID: 1352910374}
 --- !u!1001 &1917330775
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Linq; //LinQ Query 查詢語言 - 資料查詢
 
 /// <summary>
 ///  認識二維陣列
@@ -16,6 +17,7 @@ public class Learn2DArray : MonoBehaviour
 
     private void Start()
     {
+        #region 存取
         //一維陣列存取
         numbers[4] = 99;
         print("一維陣列第五比資料:" + numbers[4]);
@@ -37,9 +39,30 @@ public class Learn2DArray : MonoBehaviour
                 result += scores[i, j] + "l";
             }
 
-            reult += "\n";
+            result += "\n";
         }
 
         print(result);
+        #endregion
+
+        #region 資料蒐集
+
+        //搜尋 numbers 一維陣列內大於等於 10 的資料
+        // var 無類型資料型態
+        //from 資料A in 陣列        -從陣列搜尋資料保存為 資料A
+        //where 資料A 條件          -判斷 資料A 是否符合條件
+        //select 資料A :            -選取 符合條件的  資料A
+        var numbverGratgerTen =
+            from int n in numbers
+            where n >= 10
+            select n;
+
+        print("符合 >= 10 y 資料有幾筆 :" + numbverGratgerTen.Count());
+
+        for (int i = 0; i < numbverGratgerTen.Count(); i++)
+        {
+            print(">=10的資料為:" + numbverGratgerTen.ToArray()[i]);
+        }
+        #endregion
     }
 }
